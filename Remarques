@@ -7,3 +7,9 @@ CSS
 * display: inline-block; ?
 * margin: 0; ?
 * Two images side by side ?
+* display: block; ?
+* .no_border{
+	border: none;
+}
+* Les informations affichées dans le tableau doivent être du texte modifiable  ???
+
