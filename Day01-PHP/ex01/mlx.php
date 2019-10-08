@@ -1,10 +1,10 @@
 #!/usr/bin/php
 <?php
-$j = 0;
-while($j < 100)
+$cpt = 0;
+while($cpt < 100)
 {
 	echo"X";
-	$j++;
+	$cpt++;
 }
 echo "\n";
 ?>
