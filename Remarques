@@ -13,19 +13,7 @@ CSS
 }
 * Les informations affichées dans le tableau doivent être du texte modifiable  ???
 
-Réalisez très exactement et très précisément la page du site
-Pour cela, vous disposez d’une série d’images imposées que vous devez utiliser (pas plus, pas moins). 
-Attention à tous les détails, le positionnement, les polices, les couleurs, les bordures, ... . 
-Il y a également des liens et zones cliquables qui pointent vers les sites suivants :
-• L’image reload.png dont le titre est “Recommencer au début” renvoie sur www.disney.com.
-• close.gif (“Déconnecter”) pointe sur www.relaischateaux.com.
-• Les actions à gauche sont intitulées respectivement : “Avancer”, “Prendre”, “Regarder”, “Utiliser”, “Parler”. Le alt/title doit utiliser ce nom.
-• Dans l’image centrale, une zone sur la chaise principale du milieu (la seconde en
-partant de la droite) pointe sur www.ikea.com, et l’écran le plus gros, de dos, en
-bas à droite pointe sur www.apple.com.
-• Vous avez le choix pour les titres des objets. Mais il doit y en avoir un.
-
-ex02 ?
+ex02 ? => refaire, calcul px
     margin: auto;
     margin-top: 1%;
     padding:1%;
@@ -36,3 +24,6 @@ ex02 ?
     z-index: 1;
 	display:inline-block;
 	position:absolute;
+
+Day 01
+
