@@ -7,6 +7,8 @@
 		sort($sort_word);
 		return ($sort_word);
 	}
+
+/* !!! j'ai pas traite le cas des tabulations et des plusieurs espace ex: "  kjkj      fd fddffd   "*/
 /* main juste pour le test il faut la supp avant de pusher*/
 echo ("add str\n");
 $str = trim(fgets(STDIN));
