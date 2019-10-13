@@ -4,11 +4,14 @@
 		exit();
 	$read = fopen($argv[1], 'r');
 	$page = "";
-    while ($read && !feof($read)) {
+    while ($read && !feof($read)) 
+    {
         $page .= fgets($read);
     }
-    $page = preg_replace_callback("/(<a )(.*?)(>)(.*)(<\/a>)/si", function($matches) {
-        $matches[0] = preg_replace_callback("/( title=\")(.*?)(\")/mi", function($matches) {
+    $page = preg_replace_callback("/(<a )(.*?)(>)(.*)(<\/a>)/si", function($matches) 
+    {
+        $matches[0] = preg_replace_callback("/( title=\")(.*?)(\")/mi", function($matches) 
+        {
             return ($matches[1]."".strtoupper($matches[2])."".$matches[3]);
         }, $matches[0]);
 
