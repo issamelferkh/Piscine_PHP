@@ -1,10 +1,10 @@
 Plannig for prera
-================= 
-80% => 05/05  +++=> [Day_00] : HTML-CSS                 => dimanche (refaire +++ !!!)
-90% => 13/14  +++=> [Day_01] : PHP coding               => vendredi
-00% => 02/06  => [Day_02] : PHP coding +  regexp    => samedi
-00% =>   /06  +++=> [Day_03] : PHP-MAMP                 => samedi
-00% =>   /05  => [Day_04] : PHP-MAMP                    => dimanche
+=================
+80% => 05/05  +++=> [Day_00] : HTML-CSS
+90% => 13/14  +++=> [Day_01] : PHP coding
+00% => 02/06  => [Day_02] : PHP coding +  regexp
+00% =>   /06  +++=> [Day_03] : PHP-MAMP
+00% =>   /05  => [Day_04] : PHP-MAMP
 
 00% =>   /21  +++=> [Day_05] : SQL 
 00% =>   /06  +++=> [Day_06] : PHP-POO 
@@ -42,10 +42,3 @@ ex02 ? => refaire, calcul px
 	display:inline-block;
 	position:absolute;
 
-Day 01
-
-Lundi 10h ---> Mardi 23h
-Mardi 10h ---> Mecredi 23h
-Mecredi
-jeudi
-Vendredi
