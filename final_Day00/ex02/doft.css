@@ -4,19 +4,19 @@ html, body{
     margin: auto;
     background-color: rgb(80, 80, 80)
 }
-.gray-div{
+.div-gris{
     background-color: rgb(144, 144, 144);
     box-shadow: 10px 10px 5px #000000;
     border-radius: 10px;
 }
-.mid{
+.middle{
     display: inline-block;
     width:70%;
     height:50%;
     margin-left:15%;;
     margin-top:2%;
 }
-#arrow, #main, #oeil, #outil, #chat-icon2, #book, #towel{
+#arrow, #main, #oeil, #outil, #chat-icon, #book, #towel{
     display:block;
     width:60%;
     margin:auto;
@@ -32,16 +32,16 @@ html, body{
     position:relative;
     z-index:1;
 }
+#day_of_the_42{
+    display:inline-block;
+    width:35%;
+}
 #top-right{
     width:100%;
     height:auto;
     display:inline-block;
     float: right;
     width:3%;
-}
-#day_of_the_42{
-    display:inline-block;
-    width:35%;
 }
 #loupe{
     width:20.9%;
@@ -68,7 +68,7 @@ html, body{
     float:left;
     padding-bottom:2%;
 }
-#eye{
+#oeil{
     border: 4.5px solid red;
     border-radius: 5px;
 }  
@@ -124,7 +124,6 @@ html, body{
     background-repeat: repeat;
     background-size: 27%;
 }
-
 /*Form div*/
 .green-div{
     display:inline-block;
@@ -152,9 +151,9 @@ p{
     font-style: italic;
 }
 #ordinateur{
-    text-shadow:6px 6px 5.5px red;
+    text-shadow:5px 5px 5.5px red;
 }
-#repondre{
+#form_submit{
     background-color: rgb(214, 214, 214);
     border-color: rgb(80, 80, 80);
     border: 1px solid;
@@ -165,7 +164,7 @@ p{
     width:20%;
     font-size: 0.8vw;
 }
-#formulaire{
+#form_text{
     width:65%;
     height:10%;
     display:inline-block;
