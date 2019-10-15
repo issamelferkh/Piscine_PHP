@@ -1,54 +1,48 @@
 <!DOCTYPE html> 
 <html>
-
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <title>Day of the 42</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="doft.css" />
+    <link rel="stylesheet" href="doft.css">
 </head>
-
 <body>
-    <div class="div-gris top-div">
-        <img src="resources/day_of_the_42.png" alt="Day of the 42" id="day_of_the_42"/>
-        <div id="top-right">
-            <a href="http://www.disney.com/" target="_blank">
-                <img src="resources/reload.png" alt="Recommencer au début" id="reload"/>
+    <div class="page">
+        <header>
+            <img class="logo" src="resources/day_of_the_42.png" alt="logo" title="Logo">
+            <img class="search" src="resources/loupe.png" alt="Rechercher" title="Rechercher">
+            <a href="http://www.disney.com">
+                <img class="refresh" src="resources/reload.png" alt="Recommencer au début" title="Recommencer au début">
             </a>
-            <a href="https://www.relaischateaux.com/" target="_blank">
-                <img src="resources/close.gif" alt="Déconnecter" id="close"/>
+            <a href="http://www.relaischateaux.com">
+                <img class="delete" src="resources/close.gif" alt="Déconnecter" title="Déconnecter">
             </a>
+        </header>
+        <div class="menu_gauche">
+            <img src="resources/arrow.png" alt="Avancer" title="Avancer">
+            <img src="resources/main.png" alt="Prendre" title="Prendre">
+            <img class="selected" src="resources/oeil.png" alt="Regarder" title="Regarder">
+            <img src="resources/outil.png" alt="Utiliser" title="Utiliser">
+            <img src="resources/chat-icon.png" alt="Parler" title="Parler">
         </div>
-        <img src="resources/loupe.png" alt="Loupe" id="loupe"/>
-    </div>
-
-    <div class="middle">
-        <div class="div-gris left-div">
-            <img src="resources/arrow.png" alt="Avancer" id="arrow"/>
-            <img src="resources/main.png" alt="Prendre" id="main"/>
-            <img src="resources/oeil.png" alt="Regarder" id="oeil"/>
-            <img src="resources/outil.png" alt="Utiliser" id="outil"/>
-            <img src="resources/chat-icon.png" alt="Parler" id="chat-icon"/>
-        </div>
-        <div class="div-gris mid-div">
-            <img src="resources/cluster.jpg" alt="Cluster" id="cluster"/>
-            <a href="http://www.ikea.com/" target="_blank" id="ikea"></a>
-            <a href="https://www.apple.com/" target="_blank" id="apple"></a>
-        </div>
-        <div class="div-gris right-div">
-            <img src="resources/book.png" alt="Book" id="book"/>
-            <img src="resources/towel.png" alt="Towel" id="towel"/>
-            <div id="bricks">
-                <img src="resources/brick.jpg" alt="Brick" class="brick"/>
-                <img src="resources/brick.jpg" alt="Brick" class="brick"/>
+        <div class="content">
+            <img src="resources/cluster.jpg" alt="cluster" title="Clique sur un element" usemap="#map">
+            <map name="map" id="map">
+                <area alt="imac" title="Imac" href="http://www.apple.com" shape="poly" coords="791,314,982,327,978,465,904,449,907,484,845,472,850,440,792,430">
+                <area alt="chaise" title="Chaise" href="http://www.ikea.com" shape="poly" coords="407,393,436,382,449,387,449,393,423,403,439,411,456,416,429,427,431,438,438,444,436,453,425,448,413,456,403,457,396,452,398,478,406,469,414,475,412,480,461,488,466,500,456,501,456,490,400,486,427,527,430,541,419,542,419,528,397,500,399,512,391,512,389,492,341,529,345,536,340,540,337,541,331,536,338,522,382,483,345,492,345,501,332,500,339,484,389,474,390,458,380,450,352,441,342,435,344,392,344,376,325,332,329,323,360,328,390,339,403,358,403,391" />
+            </map>
+            <div class="form">
+                Vous <span class="big">entrez</span> alors dans une grande piece remplie<br>d'<span class="shadow">ordinateurs</span>...<br>
+                <span class="italic">- Bonjour, vous êtes nouveau ici ?</span>
+                <form action="#">
+                    <input type="text">
+                    <input type="submit" value="Repondre">
+                </form>
             </div>
         </div>
-        <div class="green-div">
-            <p>Vous <span id="big">entrez</span> alors dans une grande piece remplie d'<span id="ordinateur">ordinateurs</span>...</p>
-            <p id="italic">- Bonjour, vous êtes nouveau ici ?</p>
-            <form action="" method="">
-                <input type="text" id="form_text">
-                <input type="submit" value="Repondre" id="form_submit">
-            </form>
+        <div class="menu_droite">
+            <img src="resources/book.png" alt="book" title="Livre">
+            <img src="resources/towel.png" alt="towel" title="Serviette">
+            <div class="wall" alt="wall" title="Mur"></div>
         </div>
     </div>
 </body>
