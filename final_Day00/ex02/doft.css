@@ -1,23 +1,25 @@
+/* All */
 body { 
     background-color: #505050;
-    margin: 18px 0 0 8px;
+    margin: 18px 0 0 8px; /*? 18px 0 0 8px*/
 }
 
-.page {
+.all {
     margin: 0 auto;
     width: 1420px;
-}
-
-header {
-    height: 137px;
-    width: 1420px;
-    position: relative;
 }
 
 header, .menu_gauche, .menu_droite, .content, .form {
     border-radius: 9px;
     box-shadow: 10px 10px 10px #000000;
     background-color: #909090;
+}
+
+/* header */
+header {
+    height: 137px;
+    width: 1420px;
+    position: relative;
 }
 
 header img.logo {
@@ -31,21 +33,23 @@ header img.search {
     right: 30px;
 }
 
-header img.delete, header img.refresh {
+header .delete {
+    bottom: 10px;
     position: absolute;
     right: 10px;
     height: 20px;
     width: 20px;
 }
 
-header .delete {
-    bottom: 10px;
-}
-
 header .refresh {
     top: 10px;
+    position: absolute;
+    right: 10px;
+    height: 20px;
+    width: 20px;
 }
 
+/* menu_gauche */
 .menu_gauche{
     width: 108px;
     height: 410px;
@@ -59,17 +63,13 @@ header .refresh {
     margin-bottom: 6px;
 }
 
-.menu_droite img {
-    width: 70px;
-    margin-bottom: 6px;
-}
-
-.menu_gauche img.selected {
+.menu_gauche img.oeil {
     border: 5px solid red;
     margin: -5px 0 1px -5px;
     border-radius: 5px;
 }
 
+/* menu_droite */
 .menu_droite{
     width: 105px;
     height: 410px;
@@ -78,19 +78,19 @@ header .refresh {
     padding: 15px 0 0 35px;
 }
 
+.menu_droite img {
+    width: 70px;
+    margin-bottom: 6px;
+}
+
 .menu_droite .wall {
-    content: '';
     background-image: url('resources/brick.jpg');
     width: 120px;
     height: 70px;
     margin:-5px 0 0 -25px;
 }
 
-.menu_droite img {
-    width: 70px;
-    margin-bottom: 6px;
-}
-
+/* content */
 .content {
     margin: 20px 0 0 30px;
     width: 1020px;
@@ -105,6 +105,7 @@ header .refresh {
     height: 562px;
 }
 
+/* form */
 .form {
     background-color: #88ff89;
     width: 500px;
@@ -115,26 +116,25 @@ header .refresh {
     padding: 10px;
     font-family: arial;
     font-size: 16px;
-    /* font-stretch: expanded !important; */
     letter-spacing: 1px;
     font-weight: 300;
 }
 
-.form span.big {
-    font-family: Times;
-    font-size: 31px;
+/* .form form {
+    height: 22px;
+} */
+
+.form span.italic {
+    font-style: italic;
 }
 
 .form span.shadow {
     text-shadow: 5px 5px 5px #ff0000;
 }
 
-.form span.italic {
-    font-style: italic;
-}
-
-.form form {
-    height: 22px;
+.form span.big {
+    font-family: Times;
+    font-size: 31px;
 }
 
 .form form input[type="text"] {
@@ -148,12 +148,10 @@ header .refresh {
 
 .form form input[type="submit"] {
     border: 1px solid #a8a4a5;
-    border-radius: 1px;
+    border-radius: 2px;
     background-color: #f4eff3;
-    background: #0079FF;
     margin-left: 4px;
     height: 22px;
     font-size:12px;
     letter-spacing: 1px;
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4eff3), to(#dcdcdc));
 }

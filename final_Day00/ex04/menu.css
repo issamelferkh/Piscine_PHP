@@ -28,33 +28,49 @@
     background-color: #00ffff;
     border: 2px solid #00bfff;
 }
-/*ul and li mise en page*/
+/*Level 1*/
+.level1 li{
+    display: inline-block;
+    width:20%;
+}
 ul{
     width:100%;
     margin-top: 1%;
-}
-li{
     text-align: center;
-    position: relative;
+    padding-left: 0px;
 }
-
-/* Level*/
-.level1 li{
-    display: inline-block;
-    width:10%;
-}
+/* Level 2 */
 .level2 li{
     display: block;
     width:100%;
+    height: auto;
     margin-left:-2px;
     margin-top: -2%;
 }
+/*Level 3*/
 .level3 li{
     display: block;
     width:100%;
     margin-left:100%;
 }
+ul ul{
+    display: none;
+    position: absolute;
+    padding : 0;
+}
 
+/* Tag */
+li{
+    text-align: center;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    color: white;
+}
 /*Hover*/
 .level1 li:hover ul.level2{
     display: block;
@@ -65,16 +81,3 @@ li{
 }
 
 
-a{
-    text-decoration: none;
-    display: inline-block;
-    padding-top: 7%;
-    padding-bottom: 7%;
-    color: white;
-}
-
-ul ul{
-    display: none;
-    position: absolute;
-    padding : 0;
-}
