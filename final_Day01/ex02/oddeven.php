@@ -2,7 +2,7 @@
 <?php
 while (true) {
     echo "Entrez un nombre: ";
-    $nbr = rtrim(fgets(STDIN));
+    $nbr = trim(fgets(STDIN), "\n");
     if (feof(STDIN)) {
         echo "\n";
         exit();

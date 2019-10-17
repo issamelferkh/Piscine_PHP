@@ -13,7 +13,6 @@ while (strpos($str, "  ") == TRUE)
     $str = str_replace("  ", " ", $str);
 $word = explode(" ", $str);
 sort($word);
-//print_r($word);
 foreach ($word as $w)
     echo $w."\n";
 ?>
