@@ -1,5 +1,6 @@
 body{
     font-family: "Arial";
+    margin: 1%;
 }
 div{
     text-align: center;
@@ -11,11 +12,11 @@ h1{
 h2{
     text-align: center;
     margin:5px;
-    font-size:1.5vw;
+    font-size:1.2vw;
 }
 p{
-    margin:3px;
-    font-size:1vw;
+    margin:2.7px;
+    font-size:0.8vw;
 }
 /*image*/
 img{

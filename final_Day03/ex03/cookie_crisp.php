@@ -10,6 +10,6 @@
 		break;
 	case("del"):
 		if ($_GET['name'] && !$_GET['value'])
-			setcookie($_GET['name'], '', time() -86400, '/n');
+			setcookie($_GET['name'], '', time() - 86400, '/n');
 		break;
     }
