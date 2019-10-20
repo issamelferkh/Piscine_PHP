@@ -6,14 +6,10 @@
     }
 ?>
 <html><body>
-<form action="index.php" name="index.php" method="GET">
+<form method="get" action="index.php" name="index.php" >
     Identifiant: <input type="text" name="login" value="<?= $_SESSION["login"]; ?>" />
     <br />
     Mot de passe: <input type="password" name="passwd" value="<?= $_SESSION["passwd"]; ?>" />
     <input type="submit" name="submit" value="OK">
 </form>
 </body></html>
-<!-- tous les tags du formulaire devront êtres chacun sur une et une seule ligne (voir
-l’exemple) -->
-
-<!-- les champs déjà renseignés précédemment devront être pré-remplis. -->
