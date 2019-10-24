@@ -2,7 +2,7 @@
 
 class Lannister {
 	public function __construct() {
-		print("A Lannister is born !" . PHP_EOL); 
+		print("A Lannister is born ssssss!" . PHP_EOL); 
 	}
 	public function getSize() {
 		return "Average";
