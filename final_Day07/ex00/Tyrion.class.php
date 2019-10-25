@@ -4,7 +4,6 @@ class Tyrion extends Lannister{
         parent::__construct();
         print("My name is Tyrion" . PHP_EOL);
     }
-
     public function getSize() {
         return "Short";
     }
