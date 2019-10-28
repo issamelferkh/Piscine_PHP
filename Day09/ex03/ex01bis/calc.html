@@ -4,31 +4,38 @@
     <meta charset="utf-8" />
     <title>Calculatrice</title>
     <style>
-    .calcul{
-        text-align: center;
-		padding: 100px;
-		background-color: rgb(65, 62, 62);
-	}
-    h1{
-        color: white;
-    }
+        .calcul{
+            text-align: center;
+            padding: 100px;
+            background-color: rgb(65, 62, 62);
+        }
+        h1{
+            color: white;
+        }
     </style>
-
+</head>
+<body>
+    <div class="calcul">
+        <h1>Calculatrice</h1>
+        <div >
+            <input type="text" id="nbr1" value="">
+            <select id="op">
+                <option value="add">+</option>
+                <option value="min">-</option>
+                <option value="mul">×</option>
+                <option value="div">÷</option>
+                <option value="mod">%</option>
+            </select>
+            <input type="text" id="nbr2" value="">
+            <button id="calc">Try me!</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
         var nbr1;
         var nbr2;
         var op;
         var calc;
-
-        window.onload = function ()
-        {
-            nbr1 = document.getElementById("nbr1");
-            nbr2 = document.getElementById("nbr2");
-            op = document.getElementById("op");
-            calc = document.getElementById("calc");
-            calc.addEventListener("submit", calculate);
-            window.setInterval(ShowAlert, 30000);
-        }
 
         function ft_check(nb1, nb2){
             if (nb1 >= 0 && nb2 >= 0)
@@ -37,14 +44,13 @@
         }
 
         function calculate(){
-            event.preventDefault();	//???
-            var nb1 = Number(nbr1.value);
-            var nb2 = Number(nbr2.value);
+            var nb1 = Number(nbr1.val());
+            var nb2 = Number(nbr2.val());
             if (!ft_check(nb1, nb2)){
                 alert('Error :(');
                 return ;
             }
-            switch (op.value) {
+            switch (op.val()) {
                 case ("add"):
                     show(nb1 + nb2);
                     break;
@@ -66,7 +72,7 @@
                     else
                         show(nb1 % nb2);
                     break;
-                default: // wach nkhalli 7ta had error ou non
+                default:
                     show("Error :(");
             }
         }
@@ -80,23 +86,13 @@
         {
             alert('Please, use me...');
         }
+
+        nbr1 = $("#nbr1");
+        nbr2 = $("#nbr2");
+        op = $("#op");
+        calc = $("#calc");
+        calc.on("click", calculate);
+        window.setInterval(ShowAlert, 30000);
     </script>
-</head>
-<body>
-    <div class="calcul">
-        <h1>Calculatrice</h1>
-        <form id="calc">
-            <input type="text" id="nbr1" value="">
-            <select id="op">
-                <option value="add">+</option>
-                <option value="min">-</option>
-                <option value="mul">×</option>
-                <option value="div">÷</option>
-                <option value="mod">%</option>
-            </select>
-            <input type="text" id="nbr2" value="">
-            <input type="submit" value="Try me!">
-        </form>
-    </div>
 </body>
 </html>

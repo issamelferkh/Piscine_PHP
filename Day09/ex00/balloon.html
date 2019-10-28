@@ -9,20 +9,17 @@
             height: 200px;
             background-color: #ff0000;
             border-radius: 50%;
+            transition: all 0.3s ease;
         }
     </style>
-
+</head>
+<body>
+    <div class="ballon_css" id="ballon_js"></div>
     <script>
         var color = ['#ff0000','#00ff00','#0000ff'];
         var color_index = 0;
         var ballon;
         var size = 200;
-
-        window.onload = function(){
-            ballon = document.querySelector("#ballon_js");
-            ballon.addEventListener("click", on_click);
-            ballon.addEventListener("mouseleave", on_leave);
-        }
 
         function on_click(){
             size = size + 10;
@@ -53,9 +50,9 @@
             ballon.style.backgroundColor = color[color_index];
         }
 
+        ballon = document.querySelector("#ballon_js");
+        ballon.addEventListener("click", on_click);
+        ballon.addEventListener("mouseleave", on_leave);
     </script>
-</head>
-<body>
-    <div class="ballon_css" id="ballon_js"></div>
 </body>
 </html>
